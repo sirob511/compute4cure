@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compute4Cure.org | The Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html#top">
+        <img class="brand__logo" src="assets/logo.png" alt="Logo" />
+        <span class="brand__name">Compute<span class="digit">4</span>Cure.org</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#donate">Donate</a>
+        <a href="index.html#join">Join Team</a>
+        <a href="science.html">The Science</a>
+        <a href="index.html#projects">Research</a>
+        <a href="mailto:info@compute4cure.org">Contact</a>
+      </nav>
+      <a class="btn btn--primary" href="index.html">Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="science-hero">
+      <div class="container">
+        <div class="science-kicker">POPULAR SCIENCE • PROTEIN FOLDING • WHY IT MATTERS</div>
+        <div class="science-grid">
+          <div>
+            <h1>The science behind protein folding.</h1>
+            <p class="science-lead">
+              Proteins are tiny biological machines. They start as a simple chain of building blocks (amino acids),
+              then twist and fold into a precise 3D shape. That final shape is everything:
+              it determines what the protein can do, what it can bind to, and how it behaves in the body.
+            </p>
+            <p class="science-lead">
+              Folding@home uses distributed computing to simulate these motions at massive scale.
+              When you donate compute, you help scientists run more simulations, explore more hypotheses,
+              and accelerate research that would otherwise take far longer.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="index.html#join">Join the team</a>
+              <a class="btn btn--secondary" href="https://foldingathome.org/" target="_blank" rel="noopener noreferrer">Folding@home →</a>
+            </div>
+          </div>
+
+          <aside class="science-card">
+            <h3>In one sentence</h3>
+            <p class="science-lead" style="margin:0;">
+              We simulate how proteins move and fold, because motion and shape are often the difference between
+              <strong>healthy</strong> and <strong>disease</strong>.
+            </p>
+
+            <div style="height:14px;"></div>
+
+            <h3>What you’re helping compute</h3>
+            <ul class="science-list">
+              <li>How a protein changes shape over time (dynamics)</li>
+              <li>How viruses fuse into cells (entry mechanisms)</li>
+              <li>How mutations alter behavior (misfolding / malfunction)</li>
+              <li>Where drugs could bind (pockets & interactions)</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="science-section">
+      <div class="container">
+        <div class="section__titleRow">
+          <h2 class="section-title">First: what is a protein?</h2>
+          <p class="muted">A simple, intuitive mental model that sticks.</p>
+        </div>
+
+        <div class="science-rows">
+          <div class="science-row">
+            <div class="science-visual">
+              <!-- “Beads on a string” → simple chain -->
+              <svg width="420" height="180" viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="floaty" aria-label="Amino acid chain illustration">
+                <path d="M30 90 C 90 30, 160 150, 220 90 C 280 30, 340 150, 390 90" stroke="#173c5a" stroke-width="4" stroke-linecap="round" class="stroke-draw"/>
+                <g class="pulse">
+                  <circle cx="30" cy="90" r="9" fill="#2563eb"/>
+                  <circle cx="90" cy="55" r="9" fill="#2563eb"/>
+                  <circle cx="160" cy="125" r="9" fill="#2563eb"/>
+                  <circle cx="220" cy="90" r="9" fill="#2563eb"/>
+                  <circle cx="280" cy="55" r="9" fill="#2563eb"/>
+                  <circle cx="340" cy="125" r="9" fill="#2563eb"/>
+                  <circle cx="390" cy="90" r="9" fill="#2563eb"/>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h3>Think “beads on a string.”</h3>
+              <p>
+                A protein starts as a chain of amino acids — like a long necklace.
+                But unlike jewelry, this chain is constantly moving, bumping into itself,
+                and exploring shapes.
+              </p>
+            </div>
+          </div>
+
+          <div class="science-row">
+            <div class="science-visual">
+              <!-- Folding into compact shape -->
+              <svg width="420" height="180" viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Protein folding illustration">
+                <g class="floaty">
+                  <path d="M65 90 C 110 20, 170 160, 215 90 C 250 35, 300 35, 330 90 C 360 145, 300 170, 260 140 C 220 110, 190 150, 150 125 C 110 100, 90 140, 65 90"
+                        stroke="#173c5a" stroke-width="5" stroke-linecap="round" class="stroke-draw"/>
+                  <circle cx="215" cy="90" r="34" fill="#2563eb" opacity="0.08"/>
+                  <circle cx="215" cy="90" r="18" fill="#2563eb" opacity="0.12"/>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h3>Folding is the “click” into function.</h3>
+              <p>
+                The chain settles into shapes that are energetically stable — like a crumpled piece of paper finding a final rest.
+                The final 3D form controls how the protein behaves: what it binds to, what it catalyzes, and what it signals.
+              </p>
+            </div>
+          </div>
+
+          <div class="science-row">
+            <div class="science-visual">
+              <!-- Binding pocket -->
+              <svg width="420" height="180" viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Binding pocket illustration">
+                <g class="floaty">
+                  <path d="M80 120 C 70 70, 110 35, 160 40 C 210 45, 220 80, 250 95 C 280 110, 325 70, 345 105 C 365 140, 330 155, 290 150 C 250 145, 220 165, 180 155 C 140 145, 95 160, 80 120"
+                        fill="#f8fafc" stroke="#173c5a" stroke-width="4"/>
+                  <path d="M170 110 C 190 85, 220 85, 240 110 C 220 130, 190 130, 170 110"
+                        fill="#2563eb" opacity="0.18"/>
+                  <circle cx="205" cy="110" r="8" fill="#2563eb"/>
+                  <circle cx="235" cy="110" r="8" fill="#2563eb"/>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h3>Why drugs care: pockets and interactions.</h3>
+              <p>
+                Many medicines work by fitting into a “pocket” on a protein (like a key into a lock).
+                Simulations help reveal where those pockets form, how they open and close, and how a molecule might bind.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="science-section science-section--alt">
+      <div class="container">
+        <div class="section__titleRow">
+          <h2 class="section-title">So why do we need compute?</h2>
+          <p class="muted">Because atoms move… a lot.</p>
+        </div>
+
+        <div class="science-rows">
+          <div class="science-row">
+            <div class="science-visual">
+              <!-- “Many tiny steps” visualization -->
+              <svg width="420" height="180" viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Simulation steps illustration">
+                <g class="pulse">
+                  <rect x="46" y="68" width="328" height="44" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+                  <rect x="56" y="78" width="90" height="24" rx="10" fill="#2563eb" opacity="0.15"/>
+                  <rect x="152" y="78" width="90" height="24" rx="10" fill="#2563eb" opacity="0.25"/>
+                  <rect x="248" y="78" width="90" height="24" rx="10" fill="#2563eb" opacity="0.35"/>
+                  <path d="M60 126 C 120 148, 180 148, 240 126 C 300 104, 360 104, 380 116" stroke="#173c5a" stroke-width="3" stroke-linecap="round" class="stroke-draw"/>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h3>Simulations are made of tiny time-slices.</h3>
+              <p>
+                To model protein motion, researchers compute the forces on atoms, then advance the system by a tiny time step…
+                and do it again. And again. Millions (or billions) of times.
+              </p>
+            </div>
+          </div>
+
+          <div class="science-row">
+            <div class="science-visual">
+              <!-- CPU vs GPU visual -->
+              <svg width="420" height="180" viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="CPU and GPU illustration">
+                <g class="floaty">
+                  <rect x="58" y="48" width="140" height="84" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+                  <text x="128" y="95" text-anchor="middle" font-family="Manrope" font-size="14" font-weight="800" fill="#173c5a">CPU</text>
+
+                  <rect x="222" y="48" width="140" height="84" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+                  <text x="292" y="95" text-anchor="middle" font-family="Manrope" font-size="14" font-weight="800" fill="#173c5a">GPU</text>
+
+                  <circle cx="128" cy="70" r="6" fill="#2563eb" opacity="0.35"/>
+                  <circle cx="128" cy="116" r="6" fill="#2563eb" opacity="0.35"/>
+
+                  <g opacity="0.9">
+                    <circle cx="252" cy="70" r="4" fill="#2563eb"/>
+                    <circle cx="268" cy="70" r="4" fill="#2563eb"/>
+                    <circle cx="284" cy="70" r="4" fill="#2563eb"/>
+                    <circle cx="300" cy="70" r="4" fill="#2563eb"/>
+                    <circle cx="316" cy="70" r="4" fill="#2563eb"/>
+                    <circle cx="332" cy="70" r="4" fill="#2563eb"/>
+
+                    <circle cx="252" cy="92" r="4" fill="#2563eb"/>
+                    <circle cx="268" cy="92" r="4" fill="#2563eb"/>
+                    <circle cx="284" cy="92" r="4" fill="#2563eb"/>
+                    <circle cx="300" cy="92" r="4" fill="#2563eb"/>
+                    <circle cx="316" cy="92" r="4" fill="#2563eb"/>
+                    <circle cx="332" cy="92" r="4" fill="#2563eb"/>
+
+                    <circle cx="252" cy="114" r="4" fill="#2563eb"/>
+                    <circle cx="268" cy="114" r="4" fill="#2563eb"/>
+                    <circle cx="284" cy="114" r="4" fill="#2563eb"/>
+                    <circle cx="300" cy="114" r="4" fill="#2563eb"/>
+                    <circle cx="316" cy="114" r="4" fill="#2563eb"/>
+                    <circle cx="332" cy="114" r="4" fill="#2563eb"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h3>Why GPUs are so powerful for this.</h3>
+              <p>
+                Many simulation calculations are “the same math repeated across lots of atoms.”
+                GPUs are designed for massively parallel work like that — which is why modern GPUs can contribute
+                dramatically more folding throughput than CPU-only systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="science-section">
+      <div class="container">
+        <div class="section__titleRow">
+          <h2 class="section-title">FAQ (quick and honest)</h2>
+          <p class="muted">What people usually ask first.</p>
+        </div>
+
+        <div class="science-faq">
+          <details>
+            <summary>Is this “real science” or a gimmick?</summary>
+            <p>
+              It’s real. Folding@home is used by research teams to run simulations at scale.
+              You’re not donating money — you’re donating compute time so more simulations can be run.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does my computer “mine” anything?</summary>
+            <p>
+              No. This is not cryptocurrency mining. Your machine runs scientific workloads (work units),
+              contributes results back to the project, and earns points as a public metric of contribution.
+            </p>
+          </details>
+
+          <details>
+            <summary>Will this slow my computer down?</summary>
+            <p>
+              It can use idle resources, and you can control power usage.
+              Many people fold while they’re away, or run it on dedicated hardware.
+            </p>
+          </details>
+
+          <details>
+            <summary>What’s a “work unit”?</summary>
+            <p>
+              It’s a chunk of simulation work assigned to your device. Your computer runs it,
+              returns results, and then gets the next unit. Many thousands of work units add up to big scientific progress.
+            </p>
+          </details>
+
+          <details>
+            <summary>How do I join Compute4Cure?</summary>
+            <p>
+              Join Team <strong>#1067730</strong> on Folding@home. The homepage has a simple step-by-step guide.
+              <a class="footer__link" href="index.html#join">Go to Join Team</a>.
+            </p>
+          </details>
+        </div>
+
+        <div style="height:18px;"></div>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="index.html#join">Start Folding</a>
+          <a class="btn btn--secondary" href="index.html#donate">Donate Hardware</a>
+          <a class="btn" href="https://stats.foldingathome.org/team/1067730" target="_blank" rel="noopener noreferrer">Team Stats →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        © <span id="year"></span> Compute4Cure.org • Dedicated to open science.<br />
+        Community-led initiative supporting Folding@home research. Nonprofit formation in progress.<br />
+        <a class="footer__link" href="index.html">Home</a> • <a class="footer__link" href="mailto:info@compute4cure.org">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compute4Cure.org | Scaling Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="projects.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="#top">
+                <img class="brand__logo" src="assets/logo.png" alt="Logo" />
+                <span class="brand__name">Compute<span class="digit">4</span>Cure.org</span>
+            </a>
+            <nav class="nav">
+                <a href="#donate">Donate</a>
+                <a href="#join">Join Team</a>
+                <a href="science.html">The Science</a>
+                <a href="#projects">Research</a>
+                <a href="mailto:info@compute4cure.org">Contact</a>
+            </nav>
+            <a class="btn btn--primary" href="https://stats.foldingathome.org/team/1067730" target="_blank" rel="noopener noreferrer">Team Stats</a>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero-block">
+            <div class="container">
+                <div class="hero__grid">
+                    <div class="hero__text">
+                        <p class="eyebrow">TEAM #1067730 • OPEN SCIENCE</p>
+                        <h1>Scientific computing for everyone.</h1>
+                        <p class="lead">We aggregate spare processing power to simulate protein folding. Your hardware helps scientists fight Alzheimer’s, Cancer, and Influenza.</p>
+                        <div class="hero__actions">
+                            <a class="btn btn--primary" href="#donate">How to Help</a>
+                            <a class="btn btn--secondary" href="#projects">Explore Research</a>
+                        </div>
+                    </div>
+
+                    <div class="impact-card">
+                        <div class="impact-header">Live Impact</div>
+                        <div class="stat">
+                            <span class="stat-label">Compute Points Provided</span>
+                            <span class="stat-value">15,655,932</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Work Units</span>
+                            <span class="stat-value">55</span>
+                        </div>
+                        <div class="goal-box">
+                            <div class="stat-label">Target 100,000,000 points</div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 15.7%;"></div>
+                            </div>
+                            <p class="tiny muted">15.7% of non-profit goal achieved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="section section--alt">
+            <div class="container">
+                <div class="action-grid">
+                    <div class="action-graphic">
+                        <div class="graphic-box"><img src="https://img.icons8.com/ios/100/173c5a/video-card.png" alt="Hardware Icon"/></div>
+                    </div>
+                    <div class="action-content">
+                        <h2>Donate Hardware</h2>
+                        <p>
+                            We collect and manage donated computing hardware for 24/7 scientific simulation.
+                            CPU-only systems are welcome, while modern GPUs deliver the highest impact.
+                            We currently serve the Chicago, Milwaukee, and Northern Indiana areas.
+                        </p>
+                        <ul class="check-list">
+                            <li>Modern NVIDIA GPUs (RTX 3060 or newer preferred)</li>
+                            <li>CPU-only systems are accepted and put to productive use</li>
+                            <li>Stable desktops with adequate cooling and power delivery</li>
+                        </ul>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="mailto:info@compute4cure.org">Email info@compute4cure.org</a>
+                        </div>
+                        <p class="disclaimer">Note: We are not yet a 501(c)(3); donations are not currently tax-deductible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="section">
+            <div class="container">
+                <div class="action-grid action-grid--reverse">
+                    <div class="action-graphic">
+                        <div class="graphic-box"><img src="https://img.icons8.com/ios/100/173c5a/rocket.png" alt="Join Icon"/></div>
+                    </div>
+                    <div class="action-content">
+                        <h2>Join the Movement</h2>
+                        <p>Contribute your own computer's idle cycles to our team in minutes.</p>
+                        <div class="steps">
+                            <div class="step"><span class="step-n">1</span><div><strong>Download</strong> the v8.5 client from foldingathome.org</div></div>
+                            <div class="step"><span class="step-n">2</span><div><strong>Open</strong> the Web Control interface in your browser</div></div>
+                            <div class="step"><span class="step-n">3</span><div><strong>Configure</strong> with Team ID: <strong>1067730</strong></div></div>
+                            <div class="step"><span class="step-n">4</span><div><strong>Start Folding</strong> to begin your contribution</div></div>
+                        </div>
+                        <div class="card__actions">
+                            <a class="btn btn--secondary" href="https://foldingathome.org/start-folding/" target="_blank" rel="noopener noreferrer">Get Started →</a>
+                            <a class="btn" href="science.html">Learn the science →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section--alt">
+            <div class="container">
+                <div class="section__titleRow">
+                    <h2 class="section-title">Current Research</h2>
+                    <p class="muted">Active projects our compute power is currently supporting.</p>
+                </div>
+                <div class="filters">
+                    <button class="pill is-active" data-filter="all">All</button>
+                    <button class="pill" data-filter="alzheimers">Alzheimer’s</button>
+                    <button class="pill" data-filter="cancer">Cancer</button>
+                    <button class="pill" data-filter="influenza">Influenza</button>
+                    <button class="pill" data-filter="unspecified">Other</button>
+                </div>
+                <div id="projects-grid" class="projects"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                © <span id="year"></span> Compute4Cure.org • Dedicated to open science.<br />
+                Community-led initiative supporting Folding@home research. Nonprofit formation in progress.<br />
+                <a class="footer__link" href="science.html">Learn about the science</a> • <a class="footer__link" href="mailto:info@compute4cure.org">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
