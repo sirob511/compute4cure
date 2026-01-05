@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "^(www\\.)?(compute4cure\\.com|computeforcure\\.com|computeforcure\\.org)$"
+        }
+      ],
+      "destination": "https://compute4cure.org/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "^www\\.compute4cure\\.org$"
+        }
+      ],
+      "destination": "https://compute4cure.org/$1",
+      "permanent": true
+    }
+  ]
+}
