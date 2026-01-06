@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compute4Cure.org | FAQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/logo.png" alt="Logo" />
+      <span class="brand__name">Compute<span class="digit">4</span>Cure.org</span>
+    </a>
+	<nav class="nav">
+	  <a href="index.html#donate">Donate</a>
+	  <a href="index.html#join">Join Team</a>
+	  <a href="science.html">The Science</a>
+	  <a href="how-it-works.html">How It Works</a>
+	  <a href="faq.html">FAQ</a>
+	  <a href="index.html#projects">Research</a>
+	  <a href="mailto:info@compute4cure.org">Contact</a>
+	</nav>
+
+    <a class="btn btn--primary" href="index.html">Home</a>
+  </div>
+</header>
+
+<main>
+  <section class="science-section">
+    <div class="container">
+      <div class="section__titleRow">
+        <h1 class="section-title">Frequently Asked Questions</h1>
+        <p class="muted">Clear answers about Compute4Cure and Folding@home.</p>
+      </div>
+
+      <div class="science-faq">
+
+        <details open>
+          <summary>What is Compute4Cure?</summary>
+          <p>
+            Compute4Cure (C4C) is a grassroots volunteer effort running Folding@home simulations
+            to support medical research. No salaries, no overhead — just compute power turned into science.
+          </p>
+        </details>
+
+        <details>
+          <summary>Why does Folding@home matter?</summary>
+          <p>
+            Many diseases — including Alzheimer’s, cancer, and Parkinson’s — are linked to proteins
+            folding incorrectly. Folding@home simulates these processes to help researchers understand,
+            prevent, and treat disease.
+          </p>
+        </details>
+
+        <details>
+          <summary>What research are you running right now?</summary>
+          <p>
+            Active work changes based on real scientific demand and commonly includes Alzheimer’s,
+            cancer, influenza, and genetic or protein-structure disorders.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do my points actually count?</summary>
+          <p>
+            Yes. Every work unit is verified by Folding@home and added to the global dataset
+            used in published scientific research. Points are just a public metric for real computation.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I help without donating hardware?</summary>
+          <p>
+            Absolutely. Install Folding@home, enter Team ID <strong>1067730</strong>,
+            and let your computer contribute while idle or overnight.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is my computer too old?</summary>
+          <p>
+            Probably not. Even older machines can contribute in CPU or low-power mode.
+            Idle compute is still useful compute.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I donate hardware?</summary>
+          <p>
+            Email <strong>info@compute4cure.org</strong>. We offer free local pickup in the
+            Chicago, Milwaukee, and Northern Indiana areas.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is donating hardware secure?</summary>
+          <p>
+            Yes. You can wipe your drive yourself, or we will securely zero and reimage everything
+            at no cost before use or redistribution.
+          </p>
+        </details>
+
+        <details>
+          <summary>What if my hardware is too old?</summary>
+          <p>
+            If it doesn’t meet our compute needs, we refurbish and donate it through partners
+            like PCs for People — nothing goes to landfill.
+          </p>
+        </details>
+
+        <details>
+          <summary>Are donations tax-deductible?</summary>
+          <p>
+            Not yet. Compute4Cure is currently a volunteer initiative and is actively pursuing
+            nonprofit status.
+          </p>
+        </details>
+
+        <details>
+          <summary>Who runs Compute4Cure?</summary>
+          <p>
+            Volunteers. No salaries, no investors, no overhead — just people contributing
+            time, hardware, and electricity to support open science.
+          </p>
+        </details>
+
+      </div>
+
+      <div style="height:24px;"></div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="index.html#join">Start Folding</a>
+        <a class="btn btn--secondary" href="index.html#donate">Donate Hardware</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>
+      © <span id="year"></span> Compute4Cure.org • Open science, real impact.<br />
+      <a class="footer__link" href="science.html">The Science</a> •
+      <a class="footer__link" href="how-it-works.html">How It Works</a> •
+      <a class="footer__link" href="faq.html">FAQ</a> •
+      <a class="footer__link" href="mailto:info@compute4cure.org">Contact</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

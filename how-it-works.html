@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compute4Cure.org | How Folding@home Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="assets/logo.png" alt="Logo" />
+      <span class="brand__name">Compute<span class="digit">4</span>Cure.org</span>
+    </a>
+	<nav class="nav">
+	  <a href="index.html#donate">Donate</a>
+	  <a href="index.html#join">Join Team</a>
+	  <a href="science.html">The Science</a>
+	  <a href="how-it-works.html">How It Works</a>
+	  <a href="faq.html">FAQ</a>
+	  <a href="index.html#projects">Research</a>
+	  <a href="mailto:info@compute4cure.org">Contact</a>
+	</nav>
+    <a class="btn btn--primary" href="index.html">Home</a>
+  </div>
+</header>
+
+<main>
+<section class="science-section">
+  <div class="container">
+    <div class="section__titleRow">
+      <h1 class="section-title">How Folding@home Works</h1>
+      <p class="muted">Distributed science, step by step.</p>
+    </div>
+
+    <div class="science-rows">
+
+      <!-- STEP 1 -->
+      <div class="science-row">
+        <div class="science-visual">
+          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
+            <path d="M20 70 C 60 20, 140 120, 180 70"
+                  stroke="#173c5a" stroke-width="4" fill="none"
+                  class="stroke-draw"/>
+            <g class="pulse">
+              <circle cx="20" cy="70" r="6" fill="#2563eb"/>
+              <circle cx="100" cy="40" r="6" fill="#2563eb"/>
+              <circle cx="180" cy="70" r="6" fill="#2563eb"/>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <h3>1. Proteins are dynamic</h3>
+          <p>
+            Proteins constantly move and change shape. These motions determine whether they function
+            correctly or cause disease.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="science-row">
+        <div class="science-visual">
+          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
+            <rect x="30" y="50" width="140" height="40" rx="10"
+                  fill="#ffffff" stroke="#e2e8f0"/>
+            <rect x="40" y="60" width="30" height="20" rx="6"
+                  fill="#2563eb" opacity="0.3"/>
+            <rect x="80" y="60" width="30" height="20" rx="6"
+                  fill="#2563eb" opacity="0.5"/>
+            <rect x="120" y="60" width="30" height="20" rx="6"
+                  fill="#2563eb" opacity="0.7"/>
+          </svg>
+        </div>
+        <div>
+          <h3>2. Motion is computed in tiny steps</h3>
+          <p>
+            Simulations advance atom positions one tiny time slice at a time.
+            Millions of steps are required to see meaningful behavior.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="science-row">
+        <div class="science-visual">
+          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
+            <circle cx="100" cy="70" r="26" fill="#2563eb" opacity="0.15"/>
+            <circle cx="40" cy="40" r="8" fill="#2563eb"/>
+            <circle cx="160" cy="40" r="8" fill="#2563eb"/>
+            <circle cx="40" cy="100" r="8" fill="#2563eb"/>
+            <circle cx="160" cy="100" r="8" fill="#2563eb"/>
+          </svg>
+        </div>
+        <div>
+          <h3>3. Work is distributed globally</h3>
+          <p>
+            Folding@home splits simulations into work units and distributes them
+            to volunteers around the world.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="science-row">
+        <div class="science-visual">
+          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
+            <rect x="50" y="40" width="100" height="60" rx="12"
+                  fill="#ffffff" stroke="#e2e8f0"/>
+            <text x="100" y="75" text-anchor="middle"
+                  font-family="Manrope" font-size="14" font-weight="800"
+                  fill="#173c5a">GPU / CPU</text>
+          </svg>
+        </div>
+        <div>
+          <h3>4. Your computer runs a work unit</h3>
+          <p>
+            Your CPU or GPU processes a small slice of the simulation and returns results
+            securely to the network.
+          </p>
+        </div>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="science-row">
+        <div class="science-visual">
+          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
+            <path d="M30 90 L80 40 L120 70 L170 30"
+                  stroke="#2563eb" stroke-width="4" fill="none"
+                  class="stroke-draw"/>
+            <circle cx="170" cy="30" r="6" fill="#2563eb"/>
+          </svg>
+        </div>
+        <div>
+          <h3>5. Results advance real research</h3>
+          <p>
+            Aggregated results help scientists understand disease mechanisms,
+            identify drug targets, and publish peer-reviewed research.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="height:24px"></div>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="index.html#join">Start Folding</a>
+      <a class="btn btn--secondary" href="faq.html">Read FAQ</a>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>
+      © <span id="year"></span> Compute4Cure.org • Open, distributed science.<br />
+      <a class="footer__link" href="science.html">The Science</a> •
+      <a class="footer__link" href="how-it-works.html">How It Works</a> •
+      <a class="footer__link" href="faq.html">FAQ</a>
+    </p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
