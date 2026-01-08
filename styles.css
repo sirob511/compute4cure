@@ -61,8 +61,7 @@ body {
 
 .brand__logo { width: 38px; height: 38px; }
 .digit {
-  color: #42d88a;
-  text-shadow: 0 0 4px rgba(66, 216, 138, 0.28);
+  color: #70be40;
 }
 
 .nav { display: flex; gap: 18px; }
