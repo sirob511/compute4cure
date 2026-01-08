@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://compute4cure.org/sitemap.xml
