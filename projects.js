@@ -38,6 +38,46 @@ const PROJECTS = [
     "university": "University of Illinois",
     "summary": "Predicting the site of halogenation for medicinal drug candidates.",
     "details": "40% of drugs contain halogens. We use Relative Binding Free Energy to predict how enzymes halogenate molecules, helping chemists synthesize better drugs."
+  },
+  {
+    "id": 18240,
+    "target": "unspecified",
+    "author": "Justin Miller",
+    "university": "University of Pennsylvania",
+    "summary": "Benchmarking molecular dynamics force fields using the well-studied protein T4 Lysozyme.",
+    "details": "Force fields determine how atomic forces are calculated in molecular dynamics simulations. In this project series, we use T4 Lysozyme as a benchmark system to catalog force field performance and accuracy, including rare conformations observed experimentally. We are testing multiple force field/water combinations (including Amber99SB-disp with TIP4PD-1.6 water) and expect these results to help improve simulation accuracy on Folding@home and across the broader scientific community."
+  },
+  {
+    "id": 15301,
+    "target": "cancer",
+    "author": "Miko Miwa",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Simulating ProcM lanthipeptide synthetase to understand substrate site-selectivity.",
+    "details": "Lanthipeptides are RiPP natural products with diverse bioactivities, including anticancer effects. ProcM is notable for high substrate tolerance, but how it determines site-selectivity is unclear. We run atomistic MD simulations of wild-type and variant ProcM–ProcA3.3 complexes to investigate the molecular basis of this selectivity."
+  },
+  {
+    "id": 17951,
+    "target": "unspecified",
+    "author": "Arnav Paul",
+    "university": "University of Illinois",
+    "summary": "Simulating the plant monosaccharide transporter AtSTP10 to understand active transport.",
+    "details": "AtSTP10 is a high-affinity monosaccharide transporter in plants that facilitates uptake of glucose, galactose, and mannose into pollen tubes and root primordia. Simulating its transport mechanism can help inform strategies for designing better crops."
+  },
+  {
+    "id": 18806,
+    "target": "unspecified",
+    "author": "Dr. Sonya Hanson",
+    "university": "Flatiron Institute",
+    "summary": "Studying how phosphorylation changes interactions between disordered protein fragments involved in gene regulation.",
+    "details": "Disordered proteins regulate transcription and are often chemically modified, for example by phosphorylation. Adding a negatively charged phosphoryl group can strengthen or weaken binding depending on partner charge and binding-site chemistry. This project uses simulations of small disordered protein fragments to understand how phosphorylation mediates these interactions, with future work expanding to larger fragments and full-length proteins relevant to age-related diseases such as cancer."
+  },
+  {
+    "id": 18929,
+    "target": "cancer",
+    "author": "Song Yin",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Modeling lasso peptide topology and cyclization to clarify how lariat-like natural products form.",
+    "details": "Lasso peptides are RiPP natural products with a threaded, lariat-like topology and can show anticancer, antibacterial, or antiviral activity. The proposed mechanism involves forming a prefolded lariat-like structure before a cyclase enzyme catalyzes macrolactam ring closure via an isopeptide bond. We use molecular dynamics simulations of lasso peptides with and without cyclase to explore topology formation and the cyclization mechanism."
   }
 ];
 
