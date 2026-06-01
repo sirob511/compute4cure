@@ -510,7 +510,15 @@ function wireFilters() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+function initProjects() {
   renderProjects();
   wireFilters();
-});
+}
+
+window.initProjects = initProjects;
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initProjects);
+} else {
+  initProjects();
+}
