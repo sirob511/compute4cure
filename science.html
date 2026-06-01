@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Science | Compute4Cure.org</title>
   
-  <meta name="description" content="A plain-language explanation of protein folding, Folding@home, and why donated compute helps research." />
+  <meta name="description" content="A plain-language explanation of protein folding, molecular simulation, and why donated compute helps research." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.compute4cure.org/science.html" />
   <meta property="og:title" content="The Science | Compute4Cure" />
-  <meta property="og:description" content="A plain-language explanation of protein folding, Folding@home, and why donated compute helps research." />
+  <meta property="og:description" content="A plain-language explanation of protein folding, molecular simulation, and why donated compute helps research." />
   <meta property="og:image" content="https://www.compute4cure.org/og-image.png" />
   
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://www.compute4cure.org/science.html" />
   <meta name="twitter:title" content="The Science | Compute4Cure" />
-  <meta name="twitter:description" content="A plain-language explanation of protein folding, Folding@home, and why donated compute helps research." />
+  <meta name="twitter:description" content="A plain-language explanation of protein folding, molecular simulation, and why donated compute helps research." />
   <meta name="twitter:image" content="https://www.compute4cure.org/og-image.png" />
   <link rel="canonical" href="https://www.compute4cure.org/science.html" />
   
@@ -57,28 +57,27 @@
           <div>
             <h1>The science behind protein folding</h1>
             <p class="science-lead">
-              Proteins are tiny biological machines. They start as chains of amino acids, then fold into 3D shapes
-              that control what they can do.
+              Proteins are molecular machines. Their shape and motion help determine how cells signal, move materials,
+              respond to infection, and sometimes malfunction in disease.
             </p>
             <p class="science-lead">
-              Folding@home simulates these motions at massive scale. Donated compute helps researchers run more
-              simulations, test more ideas, and move open science faster.
+              Folding@home turns these questions into simulations that can run across many computers. Donated compute
+              helps complete more work units and gives researchers more data to compare.
             </p>
           </div>
 
           <aside class="science-card">
             <h3>In one sentence</h3>
             <p class="science-lead science-lead--tight">
-              Protein shape and motion can be the difference between <strong>healthy</strong> and
-              <strong>disease</strong>.
+              We model how proteins move so researchers can study mechanisms that are too small and fast to observe directly.
             </p>
 
             <h3>What you’re helping compute</h3>
             <ul class="science-list">
-              <li>How a protein changes shape over time (dynamics)</li>
-              <li>How viruses fuse into cells (entry mechanisms)</li>
-              <li>How mutations alter behavior (misfolding / malfunction)</li>
-              <li>Where drugs could bind (pockets & interactions)</li>
+              <li>How proteins shift between functional shapes</li>
+              <li>How viruses or disease-linked proteins interact with cells</li>
+              <li>How mutations change stability or behavior</li>
+              <li>Where drug candidates might bind</li>
             </ul>
           </aside>
         </div>
@@ -89,7 +88,7 @@
       <div class="container">
         <div class="section__titleRow">
           <h2 class="section-title">First: what is a protein?</h2>
-          <p class="muted">A simple, intuitive mental model that sticks.</p>
+          <p class="muted">A simple mental model for why shape matters.</p>
         </div>
 
         <div class="science-rows">
@@ -110,11 +109,10 @@
               </svg>
             </div>
             <div>
-              <h3>Think “beads on a string.”</h3>
+              <h3>Think of a chain finding its working shape.</h3>
               <p>
-                A protein starts as a chain of amino acids — like a long necklace.
-                But unlike jewelry, this chain is constantly moving, bumping into itself,
-                and exploring shapes.
+                A protein starts as a chain of amino acids. In water and inside cells, that chain is constantly moving,
+                bumping into itself, and exploring possible shapes.
               </p>
             </div>
           </div>
@@ -132,10 +130,10 @@
               </svg>
             </div>
             <div>
-              <h3>Folding is the “click” into function.</h3>
+              <h3>Folding gives the chain function.</h3>
               <p>
-                The chain settles into shapes that are energetically stable — like a crumpled piece of paper finding a final rest.
-                The final 3D form controls how the protein behaves: what it binds to, what it catalyzes, and what it signals.
+                The chain tends to settle into shapes that are energetically favorable. Those 3D forms influence what
+                the protein can bind, what reactions it can help drive, and what signals it can send.
               </p>
             </div>
           </div>
@@ -155,10 +153,10 @@
               </svg>
             </div>
             <div>
-              <h3>Why drugs care: pockets and interactions.</h3>
+              <h3>Drugs often depend on shape and motion.</h3>
               <p>
-                Many medicines work by fitting into a “pocket” on a protein (like a key into a lock).
-                Simulations help reveal where those pockets form, how they open and close, and how a molecule might bind.
+                Many medicines work by binding to a pocket on a protein. Simulations can help reveal where those pockets
+                form, how they open and close, and how a candidate molecule might interact.
               </p>
             </div>
           </div>
@@ -169,8 +167,8 @@
     <section class="science-section science-section--alt">
       <div class="container">
         <div class="section__titleRow">
-          <h2 class="section-title">So why do we need compute?</h2>
-          <p class="muted">Because atoms move… a lot.</p>
+          <h2 class="section-title">Why does this need so much compute?</h2>
+          <p class="muted">Molecular motion is continuous, detailed, and expensive to simulate.</p>
         </div>
 
         <div class="science-rows">
@@ -188,10 +186,34 @@
               </svg>
             </div>
             <div>
-              <h3>Simulations are made of tiny time-slices.</h3>
+              <h3>Simulations advance in tiny time steps.</h3>
               <p>
-                To model protein motion, researchers compute the forces on atoms, then advance the system by a tiny time step…
-                and do it again. And again. Millions (or billions) of times.
+                Researchers calculate forces on atoms, move the system forward by a tiny step, and repeat that process
+                millions or billions of times to observe meaningful motion.
+              </p>
+            </div>
+          </div>
+
+          <div class="science-row">
+            <div class="science-visual">
+              <svg width="420" height="180" viewBox="0 0 420 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Parallel simulations illustration">
+                <g class="floaty">
+                  <rect x="70" y="46" width="70" height="52" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+                  <rect x="175" y="46" width="70" height="52" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+                  <rect x="280" y="46" width="70" height="52" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+                  <path d="M105 98v28M210 98v28M315 98v28M105 126h210" stroke="#173c5a" stroke-width="4" stroke-linecap="round"/>
+                  <circle cx="105" cy="72" r="8" fill="#2563eb"/>
+                  <circle cx="210" cy="72" r="8" fill="#2563eb"/>
+                  <circle cx="315" cy="72" r="8" fill="#2563eb"/>
+                  <circle cx="210" cy="126" r="10" fill="#70be40"/>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h3>Research needs many samples, not just one run.</h3>
+              <p>
+                One simulation shows one possible path. Many donated machines let researchers compare more starting
+                conditions, mutations, and molecule candidates in parallel.
               </p>
             </div>
           </div>
@@ -236,11 +258,10 @@
               </svg>
             </div>
             <div>
-              <h3>Why GPUs are so powerful for this.</h3>
+              <h3>GPUs are well suited for repeated molecular math.</h3>
               <p>
-                Many simulation calculations are “the same math repeated across lots of atoms.”
-                GPUs are designed for massively parallel work like that — which is why modern GPUs can contribute
-                dramatically more folding throughput than CPU-only systems.
+                Molecular simulations repeat similar calculations across many atoms. GPUs are designed for parallel work,
+                which is why modern GPUs can contribute much more throughput than CPU-only systems.
               </p>
             </div>
           </div>
