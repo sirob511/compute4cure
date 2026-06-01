@@ -402,6 +402,9 @@ h1 {
   margin-top: 18px;
   border-top: 1px solid var(--line);
   padding-top: 12px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .project-card__details-title {
@@ -416,18 +419,27 @@ h1 {
   padding-top: 12px;
   color: var(--muted);
   line-height: 1.6;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.project-card__content p {
+  margin: 0;
 }
 
 .project-card__links {
   display: flex;
   gap: 8px;
-  margin-top: 16px;
+  margin-top: auto;
+  padding-top: 16px;
 }
 
 .project-card__official-link {
   border-color: rgba(37, 99, 235, 0.28);
   color: var(--navy);
   gap: 6px;
+  white-space: nowrap;
 }
 
 .project-card__official-link:hover {
