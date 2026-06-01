@@ -359,6 +359,7 @@ h1 {
 .badge--alzheimers { background: #e0dbff; color: #4433ff; }
 .badge--cancer { background: #ffe0e0; color: #ff3333; }
 .badge--influenza { background: #e0f7ff; color: #0077aa; }
+.badge--parkinsons { background: #e7f8d8; color: #44751f; }
 
 .project-card__meta {
   font-size: 15px; 

@@ -33,7 +33,7 @@ python3 -m http.server 8000
 - Preserve the shared header/nav/footer structure across pages when adding navigation or brand changes.
 - Prefer editing existing CSS classes in `styles.css` over adding inline styles. Some current pages have small inline spacers/scripts, but new presentation work should generally go in CSS.
 - Keep copy concrete and nonprofit/science focused: donated compute, Folding@home, team ID `1067730`, hardware donations, and current nonprofit status.
-- If adding research projects, update the `PROJECTS` array in `projects.js` and use one of the existing target keys (`alzheimers`, `cancer`, `influenza`, `unspecified`) unless new filter UI and badge styling are also added.
+- If adding research projects, update the `PROJECTS` array in `projects.js` and use one of the existing target keys (`alzheimers`, `cancer`, `influenza`, `parkinsons`, `unspecified`) unless new filter UI and badge styling are also added.
 - Use absolute public URLs in social metadata and update `sitemap.xml` when adding or renaming public pages.
 
 ## Known Follow-Up Candidates
