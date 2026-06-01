@@ -486,15 +486,15 @@ function renderProjects(filter = "all") {
         <div class="project-card__meta">${escapeHtml(p.university)}</div>
         <p class="project-card__summary">${escapeHtml(p.summary)}</p>
       </div>
-      <details class="project-card__details">
-        <summary>View Research Details</summary>
+      <div class="project-card__details">
+        <h4 class="project-card__details-title">Research Details</h4>
         <div class="project-card__content">
           <p>${escapeHtml(p.details)}</p>
           <div class="project-card__links">
-             <a class="btn" href="https://stats.foldingathome.org/project/${p.id}" target="_blank" rel="noopener noreferrer">Official Page</a>
+             <a class="btn project-card__official-link" href="https://stats.foldingathome.org/project/${p.id}" target="_blank" rel="noopener noreferrer">Official Page <span aria-hidden="true">→</span></a>
           </div>
         </div>
-      </details>
+      </div>
     </article>
   `).join("");
 }
