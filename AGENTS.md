@@ -3,12 +3,13 @@
 ## Project Shape
 - This is a small static website deployed on Vercel. There is no package manager, framework, build step, or test runner in the repo.
 - Pages are plain HTML files:
-  - `index.html`: home page, donate section, and supported research grid.
+  - `index.html`: home page and donate section.
+  - `projects.html`: dedicated supported research grid.
   - `science.html`: popular science explainer page.
   - `how-it-works.html`: step-by-step Folding@home explainer.
   - `faq.html`: FAQ page.
 - Shared styling lives in `styles.css`.
-- `projects.js` contains the research project data, HTML escaping helper, project card rendering, and filter button wiring. It is loaded by all pages, but only mutates the page when `#projects-grid` exists.
+- `projects.js` contains the research project data, HTML escaping helper, project card rendering, and filter button wiring. It is loaded by `projects.html`.
 - Static assets are `assets/logo.png`, `favicon.png`, and `og-image.png`. `robots.txt`, `sitemap.xml`, and `vercel.json` are deployment/SEO/support files.
 
 ## Local Workflow
@@ -20,8 +21,8 @@ python3 -m http.server 8000
 ```
 
 - Then open `http://localhost:8000/`.
-- When changing layout or CSS, check the home page plus `science.html`, `how-it-works.html`, and `faq.html` at both desktop and mobile widths.
-- When changing `projects.js`, verify the research filter buttons on `index.html`.
+- When changing layout or CSS, check the home page plus `projects.html`, `science.html`, `how-it-works.html`, and `faq.html` at both desktop and mobile widths.
+- When changing `projects.js`, verify the research filter buttons on `projects.html`.
 
 ## Deployment Notes
 - Vercel serves the static files directly and uses `vercel.json` for clean URLs and security headers.
@@ -38,5 +39,5 @@ python3 -m http.server 8000
 
 ## Known Follow-Up Candidates
 - Several secondary pages duplicate the canonical tag and use the home page as canonical; fix this when doing SEO cleanup.
-- `projects.js` and the inline year script are loaded on content pages where the project grid is absent; this is harmless, but could be consolidated if the site grows.
+- The inline year script is repeated across pages; this is harmless, but could be consolidated if the site grows.
 - The site has no automated validation. For substantive changes, use browser checks and simple link/HTML validation.

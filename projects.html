@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects We Have Supported | Compute4Cure.org</title>
+
+  <meta name="description" content="Folding@home research projects Compute4Cure has supported with donated compute power." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.compute4cure.org/projects.html" />
+  <meta property="og:title" content="Projects We Have Supported | Compute4Cure" />
+  <meta property="og:description" content="Explore Folding@home projects Compute4Cure has supported with donated compute." />
+  <meta property="og:image" content="https://www.compute4cure.org/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.compute4cure.org/projects.html" />
+  <meta name="twitter:title" content="Projects We Have Supported | Compute4Cure" />
+  <meta name="twitter:description" content="Explore Folding@home projects Compute4Cure has supported with donated compute." />
+  <meta name="twitter:image" content="https://www.compute4cure.org/og-image.png" />
+  <link rel="canonical" href="https://www.compute4cure.org/projects.html" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script defer src="projects.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/logo.png" alt="Logo" />
+        <span class="brand__name">Compute<span class="digit">4</span>Cure.org</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html#donate">Donate</a>
+        <a href="science.html">The Science</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="projects.html">Projects</a>
+        <a href="mailto:info@compute4cure.org">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__titleRow">
+          <h1 class="section-title">Projects We Have Supported</h1>
+          <p class="muted">Folding@home projects Compute4Cure has supported with donated compute.</p>
+        </div>
+        <div class="filters">
+          <button class="pill is-active" data-filter="all">All</button>
+          <button class="pill" data-filter="alzheimers">Alzheimer’s</button>
+          <button class="pill" data-filter="cancer">Cancer</button>
+          <button class="pill" data-filter="influenza">Influenza</button>
+          <button class="pill" data-filter="parkinsons">Parkinson’s</button>
+          <button class="pill" data-filter="unspecified">Other</button>
+        </div>
+        <div id="projects-grid" class="projects"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        © <span id="year"></span> Compute4Cure.org • Dedicated to open science.<br />
+        Community-led initiative supporting Folding@home research. Nonprofit formation in progress.<br />
+        <a class="footer__link" href="science.html">The science</a> •
+        <a class="footer__link" href="index.html#donate">Donate hardware</a> •
+        <a class="footer__link" href="mailto:info@compute4cure.org">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
