@@ -452,6 +452,16 @@ h1 {
   font-weight: 800;
 }
 
+.footer__email {
+  color: var(--navy);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer__email:hover {
+  color: var(--blue);
+}
+
 /* --- Science Page Classes --- */
 .science-hero { padding: 34px 0 18px; border-bottom: 1px solid var(--line); }
 .science-kicker { font-size: 12px; font-weight: 900; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
