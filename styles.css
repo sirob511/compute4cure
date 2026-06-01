@@ -17,6 +17,15 @@ html {
   scroll-padding-top: 80px; 
 }
 
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 140ms;
+}
+
 body { 
   margin: 0; 
   font-family: "Manrope", sans-serif; 
