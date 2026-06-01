@@ -11,7 +11,7 @@
 - Shared styling lives in `styles.css`.
 - `projects.js` contains the research project data, HTML escaping helper, project card rendering, and filter button wiring. It is loaded by `projects.html`.
 - `site.js` intercepts same-site HTML navigation for smoother page transitions while preserving normal links as a fallback.
-- Static assets are `assets/logo.png`, `favicon.png`, and `og-image.png`. `robots.txt`, `sitemap.xml`, and `vercel.json` are deployment/SEO/support files.
+- Static assets are `assets/logo.svg`, `assets/logo.png`, `favicon.ico`, `favicon.png`, `og-image.svg`, and `og-image.png`. `robots.txt`, `sitemap.xml`, and `vercel.json` are deployment/SEO/support files.
 
 ## Local Workflow
 - No install is needed.
