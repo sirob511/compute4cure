@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Compute4Cure.org | Scaling Science</title>
+  <title>How Compute4Cure Works | Compute4Cure.org</title>
   
-  <meta name="description" content="Compute4Cure leverages donated compute power to accelerate research for Alzheimer’s, Cancer, and Influenza through Folding@home." />
+  <meta name="description" content="How Compute4Cure uses donated hardware and Folding@home work units to support research with distributed compute power." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.compute4cure.org/" />
-  <meta property="og:title" content="Compute4Cure | Donate Idle Compute for Science" />
-  <meta property="og:description" content="Volunteer your idle CPU/GPU power to accelerate research for Alzheimer’s, Cancer, and more." />
+  <meta property="og:url" content="https://www.compute4cure.org/how-it-works.html" />
+  <meta property="og:title" content="How Compute4Cure Works" />
+  <meta property="og:description" content="Compute4Cure receives donated hardware, runs Folding@home work units, and returns completed research computation to the network." />
   <meta property="og:image" content="https://www.compute4cure.org/og-image.png" />
   
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://www.compute4cure.org/" />
-  <meta name="twitter:title" content="Compute4Cure | Donate Idle Compute for Science" />
-  <meta name="twitter:description" content="Volunteer your idle CPU/GPU power to accelerate research for Alzheimer’s, Cancer, and more." />
+  <meta name="twitter:url" content="https://www.compute4cure.org/how-it-works.html" />
+  <meta name="twitter:title" content="How Compute4Cure Works" />
+  <meta name="twitter:description" content="How donated compute becomes completed Folding@home work units for researchers." />
   <meta name="twitter:image" content="https://www.compute4cure.org/og-image.png" />
-  <link rel="canonical" href="https://www.compute4cure.org/" />
-  
-  <link rel="canonical" href="https://www.compute4cure.org/" />
+  <link rel="canonical" href="https://www.compute4cure.org/how-it-works.html" />
   
   <link rel="icon" type="image/png" href="favicon.png" />
   
@@ -44,7 +42,7 @@
 	  <a href="index.html#top">Home</a>
 	  <a href="index.html#top">Donate</a>
 	  <a href="science.html">The Science</a>
-	  <a href="how-it-works.html">How It Works</a>
+	  <a href="how-it-works.html">Our Process</a>
 	  <a href="faq.html">FAQ</a>
 	  <a href="projects.html">Projects</a>
 	</nav>
@@ -52,130 +50,138 @@
 </header>
 
 <main id="top">
-<section class="science-section">
-  <div class="container">
-    <div class="section__titleRow">
-      <h1 class="section-title">How Folding@home Works</h1>
-      <p class="muted">Distributed science, step by step.</p>
+  <section class="process-hero">
+    <div class="container">
+      <p class="science-kicker">OUR PROCESS • DONATED HARDWARE • FOLDING@HOME</p>
+      <div class="process-hero__grid">
+        <div>
+          <h1>How Compute4Cure turns donated compute into research progress</h1>
+          <p class="science-lead">
+            Compute4Cure does not create the research simulations. We use Folding@home technology to receive work units
+            prepared by researchers, run those units on donated computers, and return completed computation to the network.
+          </p>
+          <p class="science-lead">
+            Our job is practical: collect useful hardware, keep it stable, point it at the right team, and turn idle
+            processing power into verified scientific work.
+          </p>
+        </div>
+
+        <aside class="process-summary">
+          <span class="process-summary__label">In plain terms</span>
+          <strong>Researchers define the work. Folding@home distributes it. Compute4Cure supplies the compute.</strong>
+        </aside>
+      </div>
     </div>
+  </section>
 
-    <div class="science-rows">
+  <section class="process-section">
+    <div class="container">
+      <div class="process-flow">
+        <article class="process-step">
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <rect x="12" y="12" width="40" height="46" rx="5" fill="#ffffff" stroke="#173c5a" stroke-width="3"/>
+              <path d="M22 24h20M22 34h20M22 44h12" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="process-step__number">01</span>
+            <h2>Researchers prepare work units</h2>
+            <p>
+              Folding@home projects are broken into defined work units: small pieces of a larger computational study
+              that can be processed by many machines in parallel.
+            </p>
+          </div>
+        </article>
 
-      <!-- STEP 1 -->
-      <div class="science-row">
-        <div class="science-visual">
-          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
-            <path d="M20 70 C 60 20, 140 120, 180 70"
-                  stroke="#173c5a" stroke-width="4" fill="none"
-                  class="stroke-draw"/>
-            <g class="pulse">
-              <circle cx="20" cy="70" r="6" fill="#2563eb"/>
-              <circle cx="100" cy="40" r="6" fill="#2563eb"/>
-              <circle cx="180" cy="70" r="6" fill="#2563eb"/>
-            </g>
-          </svg>
-        </div>
-        <div>
-          <h3>1. Proteins are dynamic</h3>
-          <p>
-            Proteins constantly move and change shape. These motions determine whether they function
-            correctly or cause disease.
-          </p>
-        </div>
+        <article class="process-step">
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <rect x="10" y="18" width="44" height="28" rx="6" fill="#ffffff" stroke="#173c5a" stroke-width="3"/>
+              <path d="M18 50h28M24 46v8M40 46v8" stroke="#173c5a" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="24" cy="32" r="4" fill="#2563eb"/>
+              <circle cx="40" cy="32" r="4" fill="#2563eb"/>
+            </svg>
+          </div>
+          <div>
+            <span class="process-step__number">02</span>
+            <h2>Compute4Cure provides donated machines</h2>
+            <p>
+              We accept donated computers and components, configure them for reliable operation, and run them under
+              Compute4Cure’s Folding@home team so their output is tracked together.
+            </p>
+          </div>
+        </article>
+
+        <article class="process-step">
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <rect x="12" y="16" width="40" height="32" rx="5" fill="#ffffff" stroke="#173c5a" stroke-width="3"/>
+              <path d="M20 26h24M20 34h15" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+              <path d="M50 32h8M6 32h8" stroke="#173c5a" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="process-step__number">03</span>
+            <h2>Work units are downloaded and processed</h2>
+            <p>
+              Each machine receives work from Folding@home, uses its CPU or GPU to process the unit, and continues
+              running new units as long as the system remains available.
+            </p>
+          </div>
+        </article>
+
+        <article class="process-step">
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M14 34l10 10 26-28" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="8" y="8" width="48" height="48" rx="10" fill="none" stroke="#173c5a" stroke-width="3"/>
+            </svg>
+          </div>
+          <div>
+            <span class="process-step__number">04</span>
+            <h2>Completed units return to the network</h2>
+            <p>
+              When a unit finishes, Folding@home receives and validates the result. Those completed units become part of
+              the larger research dataset for the project.
+            </p>
+          </div>
+        </article>
+
+        <article class="process-step">
+          <div class="process-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <circle cx="20" cy="24" r="8" fill="#ffffff" stroke="#173c5a" stroke-width="3"/>
+              <circle cx="44" cy="24" r="8" fill="#ffffff" stroke="#173c5a" stroke-width="3"/>
+              <circle cx="32" cy="44" r="8" fill="#ffffff" stroke="#173c5a" stroke-width="3"/>
+              <path d="M27 27l10 0M24 31l5 8M40 31l-5 8" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="process-step__number">05</span>
+            <h2>Many donated machines add up</h2>
+            <p>
+              One computer helps. Many computers running over time create meaningful throughput: more completed work
+              units, more donated computer-hours, and more capacity for open science.
+            </p>
+          </div>
+        </article>
       </div>
-
-      <!-- STEP 2 -->
-      <div class="science-row">
-        <div class="science-visual">
-          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
-            <rect x="30" y="50" width="140" height="40" rx="10"
-                  fill="#ffffff" stroke="#e2e8f0"/>
-            <rect x="40" y="60" width="30" height="20" rx="6"
-                  fill="#2563eb" opacity="0.3"/>
-            <rect x="80" y="60" width="30" height="20" rx="6"
-                  fill="#2563eb" opacity="0.5"/>
-            <rect x="120" y="60" width="30" height="20" rx="6"
-                  fill="#2563eb" opacity="0.7"/>
-          </svg>
-        </div>
-        <div>
-          <h3>2. Motion is computed in tiny steps</h3>
-          <p>
-            Simulations advance atom positions one tiny time slice at a time.
-            Millions of steps are required to see meaningful behavior.
-          </p>
-        </div>
-      </div>
-
-      <!-- STEP 3 -->
-      <div class="science-row">
-        <div class="science-visual">
-          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
-            <circle cx="100" cy="70" r="26" fill="#2563eb" opacity="0.15"/>
-            <circle cx="40" cy="40" r="8" fill="#2563eb"/>
-            <circle cx="160" cy="40" r="8" fill="#2563eb"/>
-            <circle cx="40" cy="100" r="8" fill="#2563eb"/>
-            <circle cx="160" cy="100" r="8" fill="#2563eb"/>
-          </svg>
-        </div>
-        <div>
-          <h3>3. Work is distributed globally</h3>
-          <p>
-            Folding@home splits simulations into work units and distributes them
-            to volunteers around the world.
-          </p>
-        </div>
-      </div>
-
-      <!-- STEP 4 -->
-      <div class="science-row">
-        <div class="science-visual">
-          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
-            <rect x="50" y="40" width="100" height="60" rx="12"
-                  fill="#ffffff" stroke="#e2e8f0"/>
-            <text x="100" y="75" text-anchor="middle"
-                  font-family="Manrope" font-size="14" font-weight="800"
-                  fill="#173c5a">GPU / CPU</text>
-          </svg>
-        </div>
-        <div>
-          <h3>4. Your computer runs a work unit</h3>
-          <p>
-            Your CPU or GPU processes a small slice of the simulation and returns results
-            securely to the network.
-          </p>
-        </div>
-      </div>
-
-      <!-- STEP 5 -->
-      <div class="science-row">
-        <div class="science-visual">
-          <svg width="200" height="140" viewBox="0 0 200 140" class="floaty">
-            <path d="M30 90 L80 40 L120 70 L170 30"
-                  stroke="#2563eb" stroke-width="4" fill="none"
-                  class="stroke-draw"/>
-            <circle cx="170" cy="30" r="6" fill="#2563eb"/>
-          </svg>
-        </div>
-        <div>
-          <h3>5. Results advance real research</h3>
-          <p>
-            Aggregated results help scientists understand disease mechanisms,
-            identify drug targets, and publish peer-reviewed research.
-          </p>
-        </div>
-      </div>
-
     </div>
+  </section>
 
-    <div style="height:24px"></div>
-
-    <div class="hero__actions">
-      <a class="btn btn--secondary" href="faq.html">Read FAQ</a>
+  <section class="process-note">
+    <div class="container process-note__inner">
+      <div>
+        <h2>Want the technical background?</h2>
+        <p>
+          Folding@home is the distributed computing technology Compute4Cure uses. Visit their site if you want to
+          learn more about the platform, client, and research network behind the work units.
+        </p>
+      </div>
+      <a class="btn btn--secondary" href="https://foldingathome.org/" target="_blank" rel="noopener noreferrer">Folding@home →</a>
     </div>
-
-  </div>
-</section>
+  </section>
 </main>
 
 <footer class="footer">

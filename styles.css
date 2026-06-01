@@ -500,6 +500,121 @@ h1 {
   color: var(--blue);
 }
 
+/* --- Process Page Classes --- */
+.process-hero {
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.process-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+  gap: 36px;
+  align-items: center;
+}
+
+.process-summary {
+  background: var(--navy);
+  color: white;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.14);
+}
+
+.process-summary__label {
+  display: block;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.process-summary strong {
+  display: block;
+  font-family: "Sora";
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.process-section {
+  padding: 56px 0;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--line);
+}
+
+.process-flow {
+  display: grid;
+  gap: 16px;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.process-icon {
+  width: 76px;
+  height: 76px;
+  border-radius: 16px;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.process-step__number {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.process-step h2,
+.process-note h2 {
+  margin: 0 0 8px;
+  color: var(--navy);
+  font-family: "Sora";
+  font-size: 20px;
+}
+
+.process-step p,
+.process-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.process-note {
+  padding: 36px 0;
+}
+
+.process-note__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.process-note__inner p {
+  max-width: 78ch;
+}
+
 /* --- Science Page Classes --- */
 .science-hero { padding: 34px 0 18px; border-bottom: 1px solid var(--line); }
 .science-kicker { font-size: 12px; font-weight: 900; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
@@ -579,6 +694,21 @@ h1 {
 
   .science-grid { grid-template-columns: 1fr; }
   .science-row { grid-template-columns: 1fr; }
+
+  .process-hero__grid,
+  .process-step {
+    grid-template-columns: 1fr;
+  }
+
+  .process-icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .process-note__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
   .footer__inner {
     grid-template-columns: 1fr;

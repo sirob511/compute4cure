@@ -6,7 +6,7 @@
   - `index.html`: home page and donate section.
   - `projects.html`: dedicated supported research grid.
   - `science.html`: popular science explainer page.
-  - `how-it-works.html`: step-by-step Folding@home explainer.
+  - `how-it-works.html`: Compute4Cure process page explaining how donated compute runs Folding@home work units.
   - `faq.html`: FAQ page.
 - Shared styling lives in `styles.css`.
 - `projects.js` contains the research project data, HTML escaping helper, project card rendering, and filter button wiring. It is loaded by `projects.html`.
