@@ -1,11 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Compute4Cure.org social preview</title>
-  <desc id="desc">A clean social preview image for Compute4Cure.org with the sharpened power-button logo, large headline, and readable impact stats.</desc>
+  <desc id="desc">A clean social preview image for Compute4Cure.org with the original power-button logo, large headline, and readable impact stats.</desc>
   <defs>
-    <linearGradient id="powerRing" x1="104" y1="86" x2="408" y2="426" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0b6f75"/>
-      <stop offset="1" stop-color="#173c5a"/>
-    </linearGradient>
     <linearGradient id="progress" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#70be40"/>
       <stop offset="1" stop-color="#2563eb"/>
@@ -31,12 +27,7 @@
   </g>
 
   <g transform="translate(70 58)">
-    <g transform="scale(0.18)">
-      <circle cx="256" cy="256" r="185" fill="#ffffff" stroke="url(#powerRing)" stroke-width="42"/>
-      <path d="M256 54v104" fill="none" stroke="#0b6f75" stroke-width="46" stroke-linecap="round"/>
-      <rect x="228" y="194" width="56" height="156" rx="9" fill="#70be40"/>
-      <rect x="178" y="244" width="156" height="56" rx="9" fill="#70be40"/>
-    </g>
+    <image href="assets/logo.png" xlink:href="assets/logo.png" x="0" y="-4" width="92" height="96" preserveAspectRatio="xMidYMid meet"/>
     <text x="118" y="41" font-family="Sora, Manrope, DejaVu Sans, Arial, sans-serif" font-size="43" font-weight="700" fill="#173c5a">Compute<tspan fill="#70be40">4</tspan>Cure.org</text>
     <text x="120" y="76" font-family="Manrope, DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="800" fill="#64748b">Open science, powered by donated compute</text>
 
