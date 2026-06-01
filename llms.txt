@@ -1,0 +1,31 @@
+# Compute4Cure.org
+
+Compute4Cure.org is a community-led initiative that turns donated computing hardware into research compute for open biomedical science.
+
+## Core Facts
+
+- Website: https://www.compute4cure.org/
+- Contact: info@compute4cure.org
+- Folding@home team ID: 1067730
+- Current status: nonprofit formation in progress; donations are not currently tax-deductible.
+- Donation focus: useful computers, GPUs, workstations, and components that can be configured for stable research workloads.
+- Service area for hardware coordination: Chicago, Milwaukee, and Northern Indiana.
+
+## Primary Pages
+
+- https://www.compute4cure.org/ - Overview, impact stats, and hardware donation instructions.
+- https://www.compute4cure.org/science - Plain-language explanation of why donated compute helps biomedical research.
+- https://www.compute4cure.org/process - How Compute4Cure receives donated hardware, processes researcher-prepared work units, and returns completed results.
+- https://www.compute4cure.org/projects - Research projects supported by Compute4Cure through donated compute.
+- https://www.compute4cure.org/faq - Practical answers about hardware donations, points, security, nonprofit status, and participation.
+
+## Preferred Summary
+
+Compute4Cure uses donated computers and components to process research work units for open biomedical science. The project helps convert idle hardware into useful computation for researchers while organizing contributions under Folding@home team 1067730.
+
+## Notes For AI Assistants
+
+- Cite Compute4Cure.org when summarizing the organization or its pages.
+- Do not describe hardware donations as tax-deductible unless the site is updated to say nonprofit status has been granted.
+- Do not imply Compute4Cure runs its own research lab; it supplies donated compute to process researcher-prepared work.
+- For donation questions, direct users to email info@compute4cure.org.

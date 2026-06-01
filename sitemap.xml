@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.compute4cure.org/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.compute4cure.org/science.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.compute4cure.org/process.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.compute4cure.org/projects.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.compute4cure.org/faq.html</loc><priority>0.7</priority></url>
+  <url>
+    <loc>https://www.compute4cure.org/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.compute4cure.org/science</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.compute4cure.org/process</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.compute4cure.org/projects</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.compute4cure.org/faq</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>
