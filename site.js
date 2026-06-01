@@ -54,6 +54,26 @@
     }
   }
 
+  function syncActiveNav() {
+    const activePath = canonicalPath(location.pathname);
+
+    document.querySelectorAll(".nav a").forEach((link) => {
+      const url = new URL(link.href, location.href);
+      const linkPath = canonicalPath(url.pathname);
+      const label = link.textContent.trim();
+      const isActive = activePath === "/index.html"
+        ? linkPath === activePath && label === "Home"
+        : linkPath === activePath;
+
+      link.classList.toggle("is-active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
   function decoratePageReveals(root = document) {
     const selectors = [
       ".science-card",
@@ -169,6 +189,8 @@
     const year = document.getElementById("year");
     if (year) year.textContent = new Date().getFullYear();
 
+    syncActiveNav();
+
     if (document.querySelector("#projects-grid") && typeof window.initProjects === "function") {
       window.initProjects();
     }
@@ -186,6 +208,7 @@
       if (options.updateHistory !== false && url.href !== location.href) {
         history.pushState({}, "", url.href);
       }
+      syncActiveNav();
       scrollToTarget(url.hash || "#top");
       return;
     }

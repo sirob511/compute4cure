@@ -106,13 +106,40 @@ body {
 .nav { display: flex; gap: 18px; }
 
 .nav a { 
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 0;
   text-decoration: none; 
   color: var(--muted); 
   font-size: 13px; 
   font-weight: 800; 
 }
 
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 180ms ease;
+}
+
 .nav a:hover { color: var(--blue); }
+
+.nav a.is-active {
+  color: var(--navy);
+  font-weight: 900;
+}
+
+.nav a.is-active::after {
+  transform: scaleX(1);
+}
 
 /* --- Buttons --- */
 .btn { 
@@ -895,6 +922,7 @@ h1 {
   }
 
   .nav a {
+    justify-content: center;
     font-size: 12px;
     line-height: 1.2;
     text-align: center;
