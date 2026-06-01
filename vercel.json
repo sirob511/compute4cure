@@ -1,5 +1,17 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/how-it-works",
+      "destination": "/process",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works.html",
+      "destination": "/process",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

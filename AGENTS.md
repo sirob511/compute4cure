@@ -6,7 +6,7 @@
   - `index.html`: home page and donate section.
   - `projects.html`: dedicated supported research grid.
   - `science.html`: popular science explainer page.
-  - `how-it-works.html`: Compute4Cure process page explaining how donated compute runs Folding@home work units.
+  - `process.html`: Compute4Cure process page explaining how donated compute runs Folding@home work units.
   - `faq.html`: FAQ page.
 - Shared styling lives in `styles.css`.
 - `projects.js` contains the research project data, HTML escaping helper, project card rendering, and filter button wiring. It is loaded by `projects.html`.
@@ -22,7 +22,7 @@ python3 -m http.server 8000
 ```
 
 - Then open `http://localhost:8000/`.
-- When changing layout or CSS, check the home page plus `projects.html`, `science.html`, `how-it-works.html`, and `faq.html` at both desktop and mobile widths.
+- When changing layout or CSS, check the home page plus `projects.html`, `science.html`, `process.html`, and `faq.html` at both desktop and mobile widths.
 - When changing `projects.js`, verify the research filter buttons on `projects.html`.
 
 ## Deployment Notes
