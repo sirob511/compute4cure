@@ -193,6 +193,7 @@ h1 {
   display: flex; 
   justify-content: space-between; 
   align-items: baseline; 
+  gap: 16px;
   margin-bottom: 8px; 
 }
 
@@ -202,11 +203,12 @@ h1 {
   font-weight: 600; 
 }
 
-.stat-value { 
-  font-family: "Sora"; 
-  font-size: 22px; 
-  font-weight: 700; 
-  color: var(--navy); 
+.stat-value {
+  font-family: "Sora";
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  text-align: right;
 }
 
 .progress-container { 
