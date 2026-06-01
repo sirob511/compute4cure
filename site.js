@@ -56,15 +56,21 @@
 
   function syncActiveNav() {
     const activePath = canonicalPath(location.pathname);
+    const links = Array.from(document.querySelectorAll(".nav a"));
+    let activeLink = null;
 
-    document.querySelectorAll(".nav a").forEach((link) => {
-      const url = new URL(link.href, location.href);
-      const linkPath = canonicalPath(url.pathname);
-      const label = link.textContent.trim();
-      const isActive = activePath === "/index.html"
-        ? linkPath === activePath && label === "Home"
-        : linkPath === activePath;
+    if (activePath === "/index.html") {
+      const activeLabel = location.hash === "#donate" ? "Donate" : "Home";
+      activeLink = links.find((link) => link.textContent.trim() === activeLabel);
+    } else {
+      activeLink = links.find((link) => {
+        const url = new URL(link.href, location.href);
+        return canonicalPath(url.pathname) === activePath;
+      });
+    }
 
+    links.forEach((link) => {
+      const isActive = link === activeLink;
       link.classList.toggle("is-active", isActive);
       if (isActive) {
         link.setAttribute("aria-current", "page");
@@ -81,6 +87,7 @@
       ".process-summary",
       ".process-step",
       ".process-note__inner",
+      ".page-cta__inner",
       ".science-faq details"
     ];
 

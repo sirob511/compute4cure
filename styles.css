@@ -307,6 +307,48 @@ h1 {
   line-height: 1.6;
 }
 
+/* --- Bottom Page CTA --- */
+.page-cta {
+  padding: 34px 0;
+  background: var(--navy);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.page-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.page-cta h2 {
+  margin: 0 0 6px;
+  color: white;
+  font-family: "Sora";
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.page-cta p {
+  margin: 0;
+  max-width: 68ch;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+}
+
+.page-cta__button {
+  flex: 0 0 auto;
+  background: white;
+  color: var(--navy);
+  border-color: white;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+}
+
+.page-cta__button:hover {
+  opacity: 1;
+  background: #f8fafc;
+}
+
 /* --- Motion System --- */
 .reveal-ready .reveal-on-scroll {
   opacity: 0;
@@ -866,6 +908,11 @@ h1 {
     flex-direction: column;
   }
 
+  .page-cta__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .footer__inner {
     grid-template-columns: 1fr;
     text-align: center;
@@ -975,6 +1022,10 @@ h1 {
   }
 
   .project-card__official-link {
+    width: 100%;
+  }
+
+  .page-cta__button {
     width: 100%;
   }
 
