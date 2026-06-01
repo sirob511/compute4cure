@@ -3,7 +3,7 @@
 ## Project Shape
 - This is a small static website deployed on Vercel. There is no package manager, framework, build step, or test runner in the repo.
 - Pages are plain HTML files:
-  - `index.html`: home page, donate section, and current research grid.
+  - `index.html`: home page, donate section, and supported research grid.
   - `science.html`: popular science explainer page.
   - `how-it-works.html`: step-by-step Folding@home explainer.
   - `faq.html`: FAQ page.
