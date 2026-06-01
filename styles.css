@@ -480,6 +480,15 @@ h1 {
   align-items: center;
   gap: 7px;
   text-decoration: none;
+  white-space: nowrap;
+}
+
+.footer__credit-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .footer__credit:hover {
@@ -724,5 +733,9 @@ h1 {
   .footer__group--right {
     align-items: center;
     text-align: center;
+  }
+
+  .footer__credit-line {
+    justify-content: center;
   }
 }
