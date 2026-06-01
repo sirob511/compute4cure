@@ -31,6 +31,10 @@
     return path;
   }
 
+  function isIndexPath(pathname) {
+    return canonicalPath(pathname).endsWith("/index.html");
+  }
+
   function isDocumentLink(url) {
     if (url.origin !== location.origin) return false;
     if (!["http:", "https:"].includes(url.protocol)) return false;
@@ -59,7 +63,7 @@
     const links = Array.from(document.querySelectorAll(".nav a"));
     let activeLink = null;
 
-    if (activePath === "/index.html") {
+    if (isIndexPath(location.pathname)) {
       const activeLabel = location.hash === "#donate" ? "Donate" : "Home";
       activeLink = links.find((link) => link.textContent.trim() === activeLabel);
     } else {
