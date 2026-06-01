@@ -11,7 +11,7 @@
 - Shared styling lives in `styles.css`.
 - `projects.js` contains the research project data, HTML escaping helper, project card rendering, and filter button wiring. It is loaded by `projects.html`.
 - `site.js` intercepts same-site HTML navigation for smoother page transitions while preserving normal links as a fallback.
-- Static assets are `assets/logo.png`, `favicon.ico`, `favicon.png`, `og-image.svg`, and `og-image.png`. `robots.txt`, `sitemap.xml`, and `vercel.json` are deployment/SEO/support files.
+- Static assets are `assets/logo.png`, `favicon.ico`, `favicon.png`, and `og-image.png`. `robots.txt`, `sitemap.xml`, `llms.txt`, `.well-known/security.txt`, and `vercel.json` are deployment/SEO/support files.
 
 ## Local Workflow
 - No install is needed.
@@ -26,8 +26,8 @@ python3 -m http.server 8000
 - When changing `projects.js`, verify the research filter buttons on `projects.html`.
 
 ## Deployment Notes
-- Vercel serves the static files directly and uses `vercel.json` for clean URLs and security headers.
-- The Content Security Policy currently allows self-hosted scripts/styles/images, Google Fonts, and Vercel tooling.
+- Vercel serves the static files directly and uses `vercel.json` for clean URLs, redirects, security headers, and cache headers.
+- The Content Security Policy currently allows self-hosted scripts/images, Google Fonts, and limited Vercel tooling.
 - External links used by the site include Folding@home pages, Folding@home project stats pages, Google Fonts, and `mailto:info@compute4cure.org`.
 
 ## Editing Conventions
@@ -36,7 +36,7 @@ python3 -m http.server 8000
 - Prefer editing existing CSS classes in `styles.css` over adding inline styles.
 - Keep copy concrete and nonprofit/science focused: donated compute, Folding@home, team ID `1067730`, hardware donations, and current nonprofit status.
 - If adding research projects, update the `PROJECTS` array in `projects.js` and use one of the existing target keys (`alzheimers`, `cancer`, `influenza`, `parkinsons`, `unspecified`) unless new filter UI and badge styling are also added.
-- Use absolute public URLs in social metadata and update `sitemap.xml` when adding or renaming public pages.
+- Use absolute clean public URLs in social metadata and update `sitemap.xml` and `llms.txt` when adding or renaming public pages.
 
 ## Known Follow-Up Candidates
 - The site has no automated validation. For substantive changes, use browser checks and simple link/HTML validation.

@@ -12,9 +12,11 @@ build
 .out
 .next
 
+# Local working assets
+working-folder/
+
 # Editor
 .vscode
 .idea
 
 *.old
-
