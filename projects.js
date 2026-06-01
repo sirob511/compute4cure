@@ -492,7 +492,6 @@ function renderProjects(filter = "all") {
           <p>${escapeHtml(p.details)}</p>
           <div class="project-card__links">
              <a class="btn" href="https://stats.foldingathome.org/project/${p.id}" target="_blank" rel="noopener noreferrer">Official Page</a>
-             <a class="btn btn--primary" href="https://foldingathome.org/start-folding/" target="_blank" rel="noopener noreferrer">Start Folding</a>
           </div>
         </div>
       </details>
