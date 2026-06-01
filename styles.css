@@ -543,10 +543,14 @@ h1 {
   text-transform: uppercase;
 }
 
-.process-summary strong {
-  display: block;
+.process-summary__list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 1.2em;
   font-family: "Sora";
   font-size: 20px;
+  font-weight: 800;
   line-height: 1.35;
 }
 
