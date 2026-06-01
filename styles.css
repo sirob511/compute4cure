@@ -472,6 +472,24 @@ h1 {
   font-weight: 800;
 }
 
+.footer__credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+}
+
+.footer__credit:hover {
+  color: var(--blue);
+}
+
+.footer__credit-logo {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
 .footer__email {
   color: var(--navy);
   font-weight: 800;
