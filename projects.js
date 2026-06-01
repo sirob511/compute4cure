@@ -45,7 +45,7 @@ const PROJECTS = [
     "author": "Justin Miller",
     "university": "University of Pennsylvania",
     "summary": "Benchmarking molecular dynamics force fields using the well-studied protein T4 Lysozyme.",
-    "details": "Force fields determine how atomic forces are calculated in molecular dynamics simulations. In this project series, we use T4 Lysozyme as a benchmark system to catalog force field performance and accuracy, including rare conformations observed experimentally. We are testing multiple force field/water combinations (including Amber99SB-disp with TIP4PD-1.6 water) and expect these results to help improve simulation accuracy on Folding@home and across the broader scientific community."
+    "details": "Force fields determine how atomic forces are calculated in molecular dynamics simulations. In this project series, we use T4 Lysozyme as a benchmark system to catalog force field performance and accuracy, including rare conformations observed experimentally. We are testing multiple force field/water combinations (including Amber99SB-disp with TIP4PD-1.6 water) and expect these results to help improve simulation accuracy across distributed research infrastructure and the broader scientific community."
   },
   {
     "id": 15301,
