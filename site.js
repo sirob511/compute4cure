@@ -1,5 +1,13 @@
 (() => {
   const parser = new DOMParser();
+  const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const revealSelector = ".reveal-on-scroll";
+  let revealObserver = null;
+
+  if (!reduceMotionQuery.matches) {
+    document.documentElement.classList.add("reveal-ready");
+  }
+
   const loadedScripts = new Set(
     Array.from(document.scripts)
       .map((script) => script.getAttribute("src"))
@@ -44,6 +52,64 @@
     } else {
       window.scrollTo({ top: 0, behavior });
     }
+  }
+
+  function decoratePageReveals(root = document) {
+    const selectors = [
+      ".science-card",
+      ".science-row",
+      ".process-summary",
+      ".process-step",
+      ".process-note__inner",
+      ".science-faq details"
+    ];
+
+    root.querySelectorAll(selectors.join(",")).forEach((element) => {
+      element.classList.add("reveal-on-scroll");
+    });
+  }
+
+  function hasRevealDelayClass(element) {
+    return Array.from(element.classList).some((className) => className.startsWith("reveal-delay-"));
+  }
+
+  function resetScrollReveals(root = document) {
+    if (!revealObserver) return;
+
+    root.querySelectorAll(revealSelector).forEach((element) => {
+      revealObserver.unobserve(element);
+    });
+  }
+
+  function initScrollReveals(root = document) {
+    const items = Array.from(root.querySelectorAll(revealSelector));
+    if (!items.length) return;
+
+    if (reduceMotionQuery.matches || !("IntersectionObserver" in window)) {
+      items.forEach((element) => element.classList.add("is-visible"));
+      return;
+    }
+
+    if (!revealObserver) {
+      revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        });
+      }, {
+        rootMargin: "0px 0px -10% 0px",
+        threshold: 0.12
+      });
+    }
+
+    items.forEach((element, index) => {
+      if (!hasRevealDelayClass(element)) {
+        element.classList.add(`reveal-delay-${Math.min(index % 6, 5)}`);
+      }
+      revealObserver.observe(element);
+    });
   }
 
   function syncHead(nextDocument) {
@@ -106,7 +172,13 @@
     if (document.querySelector("#projects-grid") && typeof window.initProjects === "function") {
       window.initProjects();
     }
+
+    decoratePageReveals();
+    initScrollReveals();
   }
+
+  window.initScrollReveals = initScrollReveals;
+  window.resetScrollReveals = resetScrollReveals;
 
   async function replacePage(url, options = {}) {
     const nextPath = canonicalPath(url.pathname);

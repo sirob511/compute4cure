@@ -475,8 +475,12 @@ function renderProjects(filter = "all") {
 
   const list = PROJECTS.filter((p) => filter === "all" || p.target === filter);
 
-  grid.innerHTML = list.map((p) => `
-    <article class="project-card">
+  if (typeof window.resetScrollReveals === "function") {
+    window.resetScrollReveals(grid);
+  }
+
+  grid.innerHTML = list.map((p, index) => `
+    <article class="project-card reveal-on-scroll reveal-delay-${Math.min(index % 6, 5)}">
       <div class="badge badge--${p.target}">${badgeLabel(p.target)}</div>
       <div class="project-card__header">
         <h3 class="project-card__title">${escapeHtml(p.author)}</h3>
@@ -497,6 +501,10 @@ function renderProjects(filter = "all") {
       </div>
     </article>
   `).join("");
+
+  if (typeof window.initScrollReveals === "function") {
+    window.initScrollReveals(grid);
+  }
 }
 
 function wireFilters() {

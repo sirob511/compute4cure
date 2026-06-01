@@ -280,6 +280,28 @@ h1 {
   line-height: 1.6;
 }
 
+/* --- Motion System --- */
+.reveal-ready .reveal-on-scroll {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity 520ms ease,
+    transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-ready .reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.reveal-delay-0 { transition-delay: 0ms; }
+.reveal-delay-1 { transition-delay: 45ms; }
+.reveal-delay-2 { transition-delay: 90ms; }
+.reveal-delay-3 { transition-delay: 135ms; }
+.reveal-delay-4 { transition-delay: 180ms; }
+.reveal-delay-5 { transition-delay: 225ms; }
+
 /* --- Donate Section --- */
 .action-grid { 
   display: grid; 
@@ -396,9 +418,21 @@ h1 {
   background: var(--bg);
   border: 1px solid var(--line);
   border-radius: 12px;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.035);
+  overflow: hidden;
   padding: 24px;
   display: flex;
   flex-direction: column;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.28), rgba(112, 190, 64, 0.26), transparent 70%);
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .project-card__title {
@@ -739,6 +773,8 @@ h1 {
 .science-faq summary { cursor: pointer; font-weight: 900; color: var(--navy); list-style: none; }
 .science-faq summary::-webkit-details-marker { display: none; }
 .science-faq p { margin: 10px 0 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.science-faq details[open] p { animation: answerFade 180ms ease; }
+@keyframes answerFade { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
 
 /* --- RESPONSIVE UPDATES --- */
 @media (max-width: 860px) {
@@ -928,8 +964,15 @@ h1 {
   ::view-transition-new(root),
   .floaty,
   .stroke-draw,
-  .pulse {
+  .pulse,
+  .science-faq details[open] p {
     animation: none;
+  }
+
+  .reveal-ready .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
   .stroke-draw {
