@@ -434,16 +434,34 @@ h1 {
 
 /* --- Footer --- */
 .footer { 
-  padding: 40px 0; 
+  padding: 28px 0;
   border-top: 1px solid var(--line); 
-  text-align: center; 
   font-size: 12px; 
   color: var(--muted); 
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
-.footer p {
-  margin: 0;
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.footer__group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer__group--center {
+  text-align: center;
+  align-items: center;
+}
+
+.footer__group--right {
+  text-align: right;
+  align-items: flex-end;
 }
 
 .footer__brand,
@@ -541,4 +559,17 @@ h1 {
 
   .science-grid { grid-template-columns: 1fr; }
   .science-row { grid-template-columns: 1fr; }
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .footer__group,
+  .footer__group--center,
+  .footer__group--right {
+    align-items: center;
+    text-align: center;
+  }
 }
