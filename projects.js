@@ -516,9 +516,3 @@ function initProjects() {
 }
 
 window.initProjects = initProjects;
-
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initProjects);
-} else {
-  initProjects();
-}

@@ -175,4 +175,6 @@
   window.addEventListener("popstate", () => {
     replacePage(new URL(location.href), { updateHistory: false });
   });
+
+  initPage();
 })();

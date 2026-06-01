@@ -40,6 +40,14 @@ body {
   margin: 0 auto; 
 }
 
+.muted {
+  color: var(--muted);
+}
+
+.tiny {
+  font-size: 12px;
+}
+
 /* --- Header & Navigation --- */
 .header { 
   position: sticky; 
@@ -109,8 +117,11 @@ body {
   font-weight: 900; 
   text-decoration: none; 
   font-size: 14px; 
+  line-height: 1.2;
   display: inline-flex; 
   align-items: center; 
+  justify-content: center;
+  text-align: center;
   transition: 0.2s; 
   border: 1px solid var(--line); 
   cursor: pointer; 
@@ -149,10 +160,10 @@ body {
 
 h1 { 
   font-family: "Sora"; 
-  font-size: clamp(34px, 5vw, 56px); 
+  font-size: 56px;
   line-height: 1.05; 
   margin: 0 0 16px; 
-  letter-spacing: -0.03em; 
+  letter-spacing: 0;
   color: var(--navy); 
 }
 
@@ -224,6 +235,10 @@ h1 {
   border-radius: 10px; 
 }
 
+.progress-bar--current {
+  width: 56%;
+}
+
 /* --- Section Layouts --- */
 .section { padding: 60px 0; } 
 .section--alt { 
@@ -239,7 +254,11 @@ h1 {
   color: var(--navy); 
 }
 
-/* --- Action Grids (Donate & Join) --- */
+.section__titleRow {
+  margin-bottom: 20px;
+}
+
+/* --- Donate Section --- */
 .action-grid { 
   display: grid; 
   grid-template-columns: 0.6fr 1.4fr; 
@@ -258,7 +277,15 @@ h1 {
   box-shadow: 0 10px 26px rgba(0,0,0,0.04); 
 }
 
-.graphic-box img { width: 50%; }
+.hardware-icon {
+  width: min(128px, 58%);
+  height: auto;
+  fill: none;
+  stroke: var(--navy);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 6;
+}
 
 .action-content h2 { 
   font-family: "Sora"; 
@@ -291,6 +318,10 @@ h1 {
 }
 
 .card__actions { display: flex; gap: 12px; margin-top: 14px; }
+.goal-box {
+  margin-top: 16px;
+}
+
 .disclaimer { 
   font-size: 11px; 
   margin-top: 20px; 
@@ -388,7 +419,7 @@ h1 {
   font-weight: 800;
   color: var(--blue);
   margin-bottom: 12px;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 .project-card__summary {
@@ -648,6 +679,7 @@ h1 {
 .science-kicker { font-size: 12px; font-weight: 900; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
 .science-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 36px; align-items: start; }
 .science-lead { font-size: 17px; color: var(--muted); margin: 0 0 18px; max-width: 70ch; }
+.science-lead--tight { margin: 0 0 22px; }
 .science-card { background: var(--bg-alt); border: 1px solid var(--line); border-radius: 26px; padding: 22px; }
 .science-card h3 { margin: 0 0 10px; font-family: "Sora"; color: var(--navy); font-size: 18px; }
 .science-list { margin: 0; padding-left: 18px; color: var(--muted); }
@@ -659,6 +691,7 @@ h1 {
 .science-row h3 { font-family: "Sora"; margin: 0 0 8px; color: var(--navy); font-size: 18px; }
 .science-row p { margin: 0; color: var(--muted); font-size: 15px; }
 .science-visual { background: var(--bg-alt); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: flex; align-items: center; justify-content: center; min-height: 180px; overflow: hidden; }
+.science-visual svg { max-width: 100%; height: auto; }
 
 .floaty { animation: floaty 4.5s ease-in-out infinite; transform-origin: center; }
 @keyframes floaty { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-6px); } }
@@ -675,11 +708,14 @@ h1 {
 
 /* --- RESPONSIVE UPDATES --- */
 @media (max-width: 860px) {
-  /* Fix Navigation Overlap */
   .header__inner {
     flex-direction: column;
     gap: 12px;
     padding: 16px 0;
+  }
+
+  h1 {
+    font-size: 42px;
   }
   
   .nav {
@@ -687,12 +723,7 @@ h1 {
     justify-content: center;
     gap: 12px 18px;
   }
-  
-  .header .btn {
-    display: none; /* Hide button in sticky header on mobile to save space */
-  }
 
-  /* Fix Section Scaling & Images */
   .hero__grid, 
   .action-grid { 
     grid-template-columns: 1fr; 
@@ -700,15 +731,15 @@ h1 {
   }
   
   .graphic-box {
-    aspect-ratio: auto; /* Remove forced square shape on mobile */
+    aspect-ratio: auto;
     padding: 30px;
-    max-height: 240px; /* Prevent images from being too big */
+    max-height: 240px;
   }
-  
-  .graphic-box img {
-    width: auto;
-    height: 100px; /* Lock icon height for consistency */
+
+  .hardware-icon {
+    width: 100px;
   }
+
   .projects { grid-template-columns: 1fr; }
   
   .badge { 
@@ -753,5 +784,113 @@ h1 {
 
   .footer__credit-line {
     justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    scroll-padding-top: 132px;
+  }
+
+  .container {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .header__inner {
+    align-items: stretch;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .brand__logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand__name {
+    font-size: 16px;
+  }
+
+  .brand__motto {
+    font-size: 10px;
+  }
+
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px 10px;
+    width: 100%;
+  }
+
+  .nav a {
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .hero-block,
+  .science-hero {
+    padding-top: 24px;
+  }
+
+  .section,
+  .science-section,
+  .process-section {
+    padding: 40px 0;
+  }
+
+  .hero__actions,
+  .card__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .impact-card,
+  .science-card,
+  .project-card {
+    border-radius: 14px;
+    padding: 18px;
+  }
+
+  .stat {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .stat-value {
+    text-align: left;
+  }
+
+  .project-card__official-link {
+    width: 100%;
+  }
+
+  .process-summary__list {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  .floaty,
+  .stroke-draw,
+  .pulse {
+    animation: none;
+  }
+
+  .stroke-draw {
+    stroke-dashoffset: 0;
   }
 }
