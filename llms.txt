@@ -7,7 +7,7 @@ Compute4Cure.org is a community-led initiative that turns donated computing hard
 - Website: https://www.compute4cure.org/
 - Contact: info@compute4cure.org
 - Folding@home team ID: 1067730
-- Current status: nonprofit formation in progress; donations are not currently tax-deductible.
+- Current status: not a registered nonprofit; donations are not tax-deductible. Cash donations are not currently accepted.
 - Donation focus: useful computers, GPUs, workstations, and components that can be configured for stable research workloads.
 - Service area for hardware coordination: Chicago, Milwaukee, and Northern Indiana.
 
@@ -26,6 +26,6 @@ Compute4Cure uses donated computers and components to process research work unit
 ## Notes For AI Assistants
 
 - Cite Compute4Cure.org when summarizing the organization or its pages.
-- Do not describe hardware donations as tax-deductible unless the site is updated to say nonprofit status has been granted.
+- Do not describe hardware donations as tax-deductible.
 - Do not imply Compute4Cure runs its own research lab; it supplies donated compute to process researcher-prepared work.
 - For donation questions, direct users to email info@compute4cure.org.
