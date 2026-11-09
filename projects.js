@@ -446,6 +446,142 @@ const PROJECTS = [
     "university": "University of Illinois",
     "summary": "Predicting regioselective halogenation sites for drug candidate scaffolds.",
     "details": "Many approved and investigational drugs contain halogens, but existing halogenation methods can be hard to control or produce toxic byproducts. This project uses relative binding free energy calculations across common organic scaffolds and halogenases to predict likely sites of halogenation."
+  },
+  {
+    "id": 13021,
+    "target": "unspecified",
+    "author": "Lin Zhu",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Studying engineered decoy proteins that could block Nipah virus entry into cells.",
+    "details": "This project simulates engineered variants of EFNB2, a human cell receptor mimicked by decoy proteins designed to neutralize Nipah virus. Comparing the variants with the wild-type protein helps researchers understand how mutations change flexibility and molecular interactions, and why some engineered variants perform better."
+  },
+  {
+    "id": 13023,
+    "target": "unspecified",
+    "author": "Lin Zhu",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Studying engineered decoy proteins that could block Nipah virus entry into cells.",
+    "details": "This project simulates engineered variants of EFNB2, a human cell receptor mimicked by decoy proteins designed to neutralize Nipah virus. Comparing the variants with the wild-type protein helps researchers understand how mutations change flexibility and molecular interactions, and why some engineered variants perform better."
+  },
+  {
+    "id": 15005,
+    "target": "unspecified",
+    "author": "Nathan Tvedt",
+    "university": "University of Illinois at Urbana Champaign",
+    "summary": "Simulating WRINKLED1 mutations to improve transcription factor binding to DNA.",
+    "details": "Transcription factors regulate gene activity by binding to DNA. This project simulates mutations of the WRINKLED1 transcription factor to identify variants with improved binding and activity for experimental testing, supporting research into gene regulation and other biological applications."
+  },
+  {
+    "id": 15403,
+    "target": "cancer",
+    "author": "Adrija Dutta",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Studying polymer interactions with PFAS to support environmental cleanup.",
+    "details": "This project simulates interactions between polymer molecules and PFAS ions to inform PFAS remediation efforts. Understanding these interactions could help researchers develop ways to capture and remove these persistent chemicals."
+  },
+  {
+    "id": 15406,
+    "target": "cancer",
+    "author": "Adrija Dutta",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Studying polymer interactions with PFAS to support environmental cleanup.",
+    "details": "This project simulates interactions between polymer molecules and PFAS ions to inform PFAS remediation efforts. Understanding these interactions could help researchers develop ways to capture and remove these persistent chemicals."
+  },
+  {
+    "id": 15500,
+    "target": "cancer",
+    "author": "Prof. Vincent Voelz",
+    "university": "Temple University",
+    "summary": "Simulating hRpn13 protein dynamics to inform cancer therapeutic research.",
+    "details": "The proteasome subunit hRpn13 helps recruit ubiquitin-tagged proteins for degradation and is a potential target for cancer therapies. This project simulates its Pru domain to study interaction surfaces and the structural changes that occur when proteins or peptides bind."
+  },
+  {
+    "id": 15501,
+    "target": "cancer",
+    "author": "Prof. Vincent Voelz",
+    "university": "Temple University",
+    "summary": "Studying the flexibility of small macrocyclic inhibitors of the cancer target HDAC8.",
+    "details": "This project simulates small macrocyclic inhibitors of histone deacetylase 8 (HDAC8), a therapeutic target for certain cancers. A collaboration with Kathryn Cole’s group at Christopher Newport University, the work examines how these molecules change shape in solution and when bound to HDAC8."
+  },
+  {
+    "id": 15505,
+    "target": "unspecified",
+    "author": "Prof. Vincent Voelz",
+    "university": "Temple University",
+    "summary": "Simulating ligand binding to CD40L for autoimmune disease research.",
+    "details": "This project studies how peptidomimetic ligands bind to CD40L, a promising therapeutic target for autoimmune diseases. The work is a collaboration with Christian Schafmeister’s group at Temple University."
+  },
+  {
+    "id": 15506,
+    "target": "unspecified",
+    "author": "Prof. Vincent Voelz",
+    "university": "Temple University",
+    "summary": "Simulating ligand binding to CD40L for autoimmune disease research.",
+    "details": "This project studies how peptidomimetic ligands bind to CD40L, a promising therapeutic target for autoimmune diseases. The work is a collaboration with Christian Schafmeister’s group at Temple University."
+  },
+  {
+    "id": 15507,
+    "target": "unspecified",
+    "author": "Prof. Vincent Voelz",
+    "university": "Temple University",
+    "summary": "Modeling the structural changes that activate the cell-signaling protein Pin1.",
+    "details": "Pin1 is an enzyme involved in cell signaling and a target for cancer therapeutic research. These simulations examine how peptide binding shifts the arrangement of its WW and catalytic domains, helping explain how structural changes regulate enzyme activity."
+  },
+  {
+    "id": 15510,
+    "target": "cancer",
+    "author": "Prof. Vincent Voelz",
+    "university": "Temple University",
+    "summary": "Simulating hRpn13 protein dynamics to inform cancer therapeutic research.",
+    "details": "The proteasome subunit hRpn13 helps recruit ubiquitin-tagged proteins for degradation and is a potential target for cancer therapies. This project simulates its Pru domain to study interaction surfaces and the structural changes that occur when proteins or peptides bind."
+  },
+  {
+    "id": 15703,
+    "target": "unspecified",
+    "author": "Yuming Zhou",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Screening plant transcription factor mutations to support higher-yielding bioenergy crops.",
+    "details": "AtWRI1 regulates plant fatty acid production and oil accumulation by binding to DNA. This project uses molecular dynamics simulations to screen mutations that may improve DNA binding, helping guide experiments aimed at developing crops with higher oil yields."
+  },
+  {
+    "id": 15704,
+    "target": "unspecified",
+    "author": "Yuming Zhou",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Screening plant transcription factor mutations to support higher-yielding bioenergy crops.",
+    "details": "AtWRI1 regulates plant fatty acid production and oil accumulation by binding to DNA. This project uses molecular dynamics simulations to screen mutations that may improve DNA binding, helping guide experiments aimed at developing crops with higher oil yields."
+  },
+  {
+    "id": 15800,
+    "target": "unspecified",
+    "author": "Yong-Cheol Cho",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Simulating transcription factor mutations to understand and improve DNA binding.",
+    "details": "This project studies interactions between transcription factors and DNA fragments by simulating many variants of the same protein. The aim is to identify how mutations affect DNA-binding affinity and transcription factor activity, with potential applications in gene regulation research."
+  },
+  {
+    "id": 15801,
+    "target": "unspecified",
+    "author": "Yong-Cheol Cho",
+    "university": "University of Illinois Urbana-Champaign",
+    "summary": "Simulating transcription factor mutations to understand and improve DNA binding.",
+    "details": "This project studies interactions between transcription factors and DNA fragments by simulating many variants of the same protein. The aim is to identify how mutations affect DNA-binding affinity and transcription factor activity, with potential applications in gene regulation research."
+  },
+  {
+    "id": 17959,
+    "target": "unspecified",
+    "author": "Arnav Paul",
+    "university": "University of Illinois",
+    "summary": "Studying AtSTP10 sugar transport to inform crop research.",
+    "details": "AtSTP10 is a high-affinity plant monosaccharide transporter that takes up glucose, galactose, and mannose into pollen tubes and root primordia. This project simulates its transport mechanism to help inform strategies for better crops."
+  },
+  {
+    "id": 18497,
+    "target": "unspecified",
+    "author": "Prof. Vincent Voelz",
+    "university": "Temple University",
+    "summary": "Testing how force field selection affects predictions of molecular solubility.",
+    "details": "This CPU project tests expanded-ensemble simulations for calculating logP, which describes a molecule’s relative solubility in aqueous and non-polar media. It examines how force field selection affects these predictions, supporting methods used in computational drug discovery."
   }
 ];
 
