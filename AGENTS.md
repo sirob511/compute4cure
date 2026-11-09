@@ -34,7 +34,7 @@ python3 -m http.server 8000
 - Keep the site plain HTML/CSS/vanilla JS unless the project explicitly needs a framework.
 - Preserve the shared header/nav/footer structure across pages when adding navigation or brand changes.
 - Prefer editing existing CSS classes in `styles.css` over adding inline styles.
-- Keep copy concrete and nonprofit/science focused: donated compute, Folding@home, team ID `1067730`, hardware donations, and current nonprofit status.
+- Keep copy concrete and science focused: donated compute, Folding@home, team ID `1067730`, and hardware donations. Describe Compute4Cure as a volunteer-led initiative. Do not describe it as a nonprofit or imply nonprofit status is pending. Preserve the statement that donations are not tax-deductible.
 - If adding research projects, update the `PROJECTS` array in `projects.js` and use one of the existing target keys (`alzheimers`, `cancer`, `influenza`, `parkinsons`, `unspecified`) unless new filter UI and badge styling are also added.
 - Use absolute clean public URLs in social metadata and update `sitemap.xml` and `llms.txt` when adding or renaming public pages.
 
