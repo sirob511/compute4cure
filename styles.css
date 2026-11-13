@@ -217,6 +217,7 @@ h1 {
 .hero__actions { display: flex; gap: 12px; }
 
 .impact-card { 
+  align-self: center;
   background: var(--bg-alt); 
   border: 1px solid var(--line); 
   border-radius: 26px; 
@@ -236,7 +237,15 @@ h1 {
   justify-content: space-between; 
   align-items: baseline; 
   gap: 16px;
-  margin-bottom: 8px; 
+  padding: 12px 0;
+}
+
+.stat + .stat {
+  border-top: 1px solid var(--line);
+}
+
+.stat:last-child {
+  padding-bottom: 0;
 }
 
 .stat-label { 
